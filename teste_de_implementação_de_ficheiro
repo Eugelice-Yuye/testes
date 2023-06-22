@@ -1,0 +1,18 @@
+FILE *arquivo;
+    int verificar=0;
+
+    arquivo = fopen("palavra.txt", "r");
+    if (arquivo == NULL)
+    {
+        printf("Erro!\n");
+        return;
+    }
+    
+    //Le os dados do ficheiro txt linha por linha
+
+        while (fscanf(arquivo, "%s", palavra) != EOF )
+        {
+            
+            verificar = inserir(raiz,palavra);
+        }
+
