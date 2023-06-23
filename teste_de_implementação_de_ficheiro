@@ -1,5 +1,5 @@
 FILE *arquivo;
-    int verificar=0;
+    //int verificar=0;
 
     arquivo = fopen("palavra.txt", "r");
     if (arquivo == NULL)
@@ -12,7 +12,7 @@ FILE *arquivo;
 
         while (fscanf(arquivo, "%s", palavra) != EOF )
         {
-            
-            verificar = inserir(raiz,palavra);
+            printf("%s\n",palavra);
+            //verificar = inserir(raiz,palavra);
         }
 
